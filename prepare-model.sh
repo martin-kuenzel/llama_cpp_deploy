@@ -99,7 +99,7 @@ else
         pip install -U "huggingface_hub[cli]"
     fi
 
-    hf download "${HF_REPO}" --local-dir "./${MODEL_BASENAME}" --local-dir-use-symlinks False
+    hf download "${HF_REPO}" --local-dir "./${MODEL_BASENAME}"
     mark_done "download"
 fi
 

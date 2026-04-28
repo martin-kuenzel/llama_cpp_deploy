@@ -1,4 +1,4 @@
 .env
 receipt.txt
-./workspace
-!.gitkeep
+workspace/*
+!workspace/.gitkeep
