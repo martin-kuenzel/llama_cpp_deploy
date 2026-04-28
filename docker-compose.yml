@@ -6,11 +6,8 @@ services:
     ports:
       - "${PORT:-4242}:8080"
     volumes:
-      - ${MODEL_DIR:-./}:/models
+      - ${MODEL_DIR:-./workspace}:/models
     devices:
       - /dev/dri:/dev/dri
     command: >-
-      -m /models/${MODEL_NAME:-Qwen3.6-35B-A3B-Q4_K_M.gguf}
-      --port 8080
-      --host 0.0.0.0
-      -n ${N_CTX:-512}
+      -m /models/${MODEL_NAME:-Qwen3.6-35B-A3B-Q4_K_M.gguf} --port 8080 --host 0.0.0.0 -n ${N_CTX:-512}
