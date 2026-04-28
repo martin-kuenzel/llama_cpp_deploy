@@ -6,7 +6,7 @@ services:
     ports:
       - "${PORT:-4242}:8080"
     volumes:
-      - ${MODEL_DIR:-./workspace}:/models
+      - ${MODEL_DIR:-./}:/models
     devices:
       - /dev/dri:/dev/dri
     command: >-

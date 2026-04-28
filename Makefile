@@ -6,7 +6,7 @@ export
 
 # Default variable values just in case .env doesn't exist or is missing values
 PORT ?= 4242
-MODEL_DIR ?= ./
+MODEL_DIR ?= ./workspace
 MODEL_NAME ?= Qwen3.6-35B-A3B-Q4_K_M.gguf
 N_CTX ?= 512
 HF_REPO ?= Qwen/Qwen3.6-35B-A3B
